@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/md_theme_primary"
+    tools:context=".RecordVoiceActivity">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_theme_primary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/app_name_upper"
+                android:fontFamily="@font/nico_moji"
+                android:textColor="@color/md_theme_onPrimary" />
+
+        </LinearLayout>
+    </Toolbar>
+
+    <View style="@style/Divider" />
+
+    <LinearLayout
+        android:id="@+id/stop_record_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/stop_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/stop_button" />
+
+        <LinearLayout
+            android:id="@+id/voice_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/voice_1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/dots_horizontal" />
+            <ImageView
+                android:id="@+id/voice_2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/dots_horizontal" />
+            <ImageView
+                android:id="@+id/voice_3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/dots_horizontal" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

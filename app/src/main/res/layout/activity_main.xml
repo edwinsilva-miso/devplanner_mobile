@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_theme_primary"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/devplanner_logo"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/inicio_sesion_text"
+            android:textColor="@color/md_theme_onPrimary"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/google_text"
+            android:backgroundTint="@color/md_theme_onPrimary"
+            android:textColor="@color/md_theme_primary"
+            android:padding="18dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/google_logo"
+            android:id="@+id/google_btn"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/facebook_text"
+            android:backgroundTint="#0866FF"
+            android:textColor="@color/md_theme_onPrimary"
+            android:padding="18dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/facebook_logo_primary"
+            android:id="@+id/facebook_btn"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/apple_text"
+            android:backgroundTint="@color/md_theme_onPrimary"
+            android:textColor="@color/md_theme_primary"
+            android:padding="18dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/apple_logo"
+            android:id="@+id/apple_btn"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/correo_text"
+            android:backgroundTint="@color/md_theme_tertiary"
+            android:textColor="@color/md_theme_onPrimary"
+            android:padding="18dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:id="@+id/mail_btn"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

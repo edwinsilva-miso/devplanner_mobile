@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/md_theme_primary"
+    tools:context=".RecordVoiceActivity">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_theme_primary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/app_name_upper"
+                android:fontFamily="@font/nico_moji"
+                android:textColor="@color/md_theme_onPrimary" />
+
+        </LinearLayout>
+    </Toolbar>
+
+    <View style="@style/Divider" />
+
+    <LinearLayout
+        android:id="@+id/record_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/record_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/microphone_circle" />
+
+        <TextView
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:text="@string/record_init_msg"
+            android:textColor="@color/md_theme_onPrimary"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+</LinearLayout>
