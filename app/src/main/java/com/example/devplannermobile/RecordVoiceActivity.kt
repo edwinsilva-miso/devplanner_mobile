@@ -17,4 +17,5 @@ class RecordVoiceActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
 }
